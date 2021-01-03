@@ -8,7 +8,7 @@ const LibraryList = ({libraries}) => {
     <FlatList
       data={libraries}
       renderItem={renderItem}
-      keyExtractor={library => library.id}
+      keyExtractor={library => library.id.toString()}
     />
   );
 };
